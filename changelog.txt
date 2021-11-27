@@ -1,0 +1,115 @@
+--> Changes detected at : 2021-11-23_18:15:04.316559 for webpage :http://127.0.0.1:5500/index.html
+
+  eBook Store
+  Home
+  Discover
+  Recommendations
+  WishList
+  Settings
+  logo
+  Hi There!
+  Here is an incredible worldof books for you
+  Browse more
+  Recommended for you
+  African-American Poetory
+  (27)
+  Please find this books Recommendation if you love Poetory & History
+- Just Us (Story book)
++ Just Us
+  (27)
+  Beautifully written books for story lovers
+  Recent
+  Upcoming
+  Social
+  History
+  Evolution
+  Future
+  Engineering
+  Education
+  Student's
+  New
+  Leave The World Behind
+  Rumaan Alam
+  (56)
+  The Office of Historical Correction
+  Danielle Evans
+  (13)
+  Memorial
+  Bryan Washington
+  (276)
+  Stuart Little
+  book@example.com
+   Saved
+  13 books
+   private
+   Reading
+  3 books
+   Shared
+  Help Us Better to know
+  Thanks for stopping by please recomended us to book readers
+  Share
+
+---------------------------------------------------
+
+--> Changes detected at : 2021-11-23_14:59:44.372109 for webpage :http://127.0.0.1:5500/index.html
+
+  eBook Store
+  Home
+  Discover
+  Recommendations
+  WishList
+  Settings
+  logo
+  Hi There!
+  Here is an incredible worldof books for you
+  Browse more
+  Recommended for you
+- African American Poetory
+?        ^
++ African-American Poetory
+?        ^
+- (22)
+?   ^
++ (27)
+?   ^
+- Here's the books Recommendation if you love Poetory & History
+? ^ ^ ^^   ^
++ Please find this books Recommendation if you love Poetory & History
+? ^^ ^^ ^^^^^   ^^
+- Just Us!
++ Just Us (Story book)
+  (27)
+  Beautifully written books for story lovers
+  Recent
+  Upcoming
+  Social
+  History
+  Evolution
+  Future
+  Engineering
+  Education
+  Student's
+  New
+  Leave The World Behind
+  Rumaan Alam
+  (56)
+  The Office of Historical Correction
+  Danielle Evans
+  (13)
+  Memorial
+  Bryan Washington
+  (276)
+  Stuart Little
+  book@example.com
+   Saved
+  13 books
+   private
+   Reading
+  3 books
+   Shared
+  Help Us Better to know
+  Thanks for stopping by please recomended us to book readers
+  Share
+
+---------------------------------------------------
+
