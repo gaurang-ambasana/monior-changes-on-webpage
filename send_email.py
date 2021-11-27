@@ -53,7 +53,7 @@ def create_message_and_send(sender, to, subject,  message_text_plain, message_te
     message_without_attachment = create_message_without_attachment(
         sender, to, subject, message_text_html, message_text_plain)
 
-    send_Message_without_attachment(
+    send_message_without_attachment(
         service, "me", message_without_attachment, message_text_plain)
 
 
@@ -74,7 +74,7 @@ def create_message_without_attachment(sender, to, subject, message_text_html, me
     return body
 
 
-def create_Message_with_attachment(sender, to, subject, message_text_plain, message_text_html, attached_file):
+def create_message_with_attachment(sender, to, subject, message_text_plain, message_text_html, attached_file):
     message = MIMEMultipart()
     message['to'] = to
     message['from'] = sender
@@ -141,7 +141,7 @@ def create_Message_with_attachment(sender, to, subject, message_text_plain, mess
     return {'raw': raw}
 
 
-def send_Message_without_attachment(service, user_id, body, message_text_plain):
+def send_message_without_attachment(service, user_id, body, message_text_plain):
     try:
         message_sent = (service.users().messages().send(
             userId=user_id, body=body).execute())
@@ -175,7 +175,7 @@ def main_send_email(sender, to, subject, message_text_html, attached_file=''):
 
         service = discovery.build('gmail', 'v1', http=http)
 
-        msg_with_attachment = create_Message_with_attachment(
+        msg_with_attachment = create_message_with_attachment(
             sender, to, subject, message_text_plain, message_text_html, attached_file)
 
         send_message_with_attachment(service, "me", msg_with_attachment)
