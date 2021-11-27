@@ -97,6 +97,8 @@ while flag:
             page_difference_str = get_plain_str(entire_page_difference)
 
             create_changelog_file(page_difference_str)
+            send_alert("gaurang.ambasana@dev2.wipro.com", "kevin.sanghavi1@dev2.wipro.com", "test mail",
+                       "Hi<br/><br/>HTML MSG", "F:\web development\monior-changes-on-webpage\changelog.txt")
             print(difference_str)
 
             old_page, prev_version = new_page, res_soup
