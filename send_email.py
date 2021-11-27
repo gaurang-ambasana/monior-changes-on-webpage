@@ -184,5 +184,5 @@ def main_send_email(sender, to, subject, message_text_html, attached_file=''):
                                 message_text_plain, message_text_html)
 
 
-main_send_email("gaurang.ambasana@dev2.wipro.com", "kevin.sanghavi1@dev2.wipro.com", "test mail",
-                "Hi<br/><br/>HTML MSG", "F:\web development\monior-changes-on-webpage\changelog.txt")
+# main_send_email("gaurang.ambasana@dev2.wipro.com", "kevin.sanghavi1@dev2.wipro.com", "test mail",
+#                 "Hi<br/><br/>HTML MSG", "F:\web development\monior-changes-on-webpage\changelog.txt")
