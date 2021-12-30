@@ -159,6 +159,7 @@ def send_message_with_attachment(service, user_id, message_with_attachment):
         message_sent = (service.users().messages().send(
             userId=user_id, body=message_with_attachment).execute())
         message_id = message_sent['id']
+        return message_id
 
     except errors.HttpError as error:
         print(f'An error occurred: {error}')
@@ -182,7 +183,3 @@ def main_send_email(sender, to, subject, message_text_html, attached_file=''):
     else:
         create_message_and_send(sender, to, subject,
                                 message_text_plain, message_text_html)
-
-
-# main_send_email("gaurang.ambasana@dev2.wipro.com", "kevin.sanghavi1@dev2.wipro.com", "test mail",
-#                 "Hi<br/><br/>HTML MSG", "F:\web development\monior-changes-on-webpage\changelog.txt")
