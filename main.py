@@ -12,7 +12,7 @@ first_run = True
 flag = True
 
 from_email = "gaurang.ambasana@dev2.wipro.com"
-to_emails = "kevin.sanghavi1@dev2.wipro.com"
+to_email = "kevin.sanghavi1@dev2.wipro.com"
 email_subject = "test mail"
 html_msg = "Hi<br/><br/>HTML MSG"
 file_path = "F:\web development\monior-changes-on-webpage\changelog.txt"
