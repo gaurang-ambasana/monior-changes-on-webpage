@@ -37,8 +37,6 @@ def create_changelog_file(difference):
         ' for webpage :' + url + '\n\n' + difference + \
         '\n\n---------------------------------------------------\n\n'
 
-    file_path = "F:\web development\monior-changes-on-webpage\changelog.txt"
-
     with open(file_path, 'r') as file:
         og_data = file.read()
 
