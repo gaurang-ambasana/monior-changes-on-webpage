@@ -6,15 +6,20 @@ from difflib import Differ as differentiator
 from requests import get as make_get_request
 from send_email import main_send_email as send_alert
 
+
+# any web url
 url = "http://127.0.0.1:5500/index.html"
 prev_version = ""
 first_run = True
 flag = True
 
+# write emails you want to use
 from_email = "gaurang.ambasana@dev2.wipro.com"
 to_email = "kevin.sanghavi1@dev2.wipro.com"
+
 email_subject = "test mail"
 html_msg = "Hi<br/><br/>HTML MSG"
+
 file_path = "F:\web development\monior-changes-on-webpage\changelog.txt"
 
 
@@ -101,9 +106,9 @@ while flag:
             page_difference_str = get_plain_str(entire_page_difference)
 
             create_changelog_file(page_difference_str)
-            send_alert(from_email, to_emails,
+            send_alert(from_email, to_email,
                        email_subject, html_msg, file_path)
-            print(difference_str)
+            # print(difference_str)
 
             old_page, prev_version = new_page, res_soup
     else:
