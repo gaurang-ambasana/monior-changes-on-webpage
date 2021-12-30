@@ -11,6 +11,12 @@ prev_version = ""
 first_run = True
 flag = True
 
+from_email = "gaurang.ambasana@dev2.wipro.com"
+to_emails = "kevin.sanghavi1@dev2.wipro.com"
+email_subject = "test mail"
+html_msg = "Hi<br/><br/>HTML MSG"
+file_path = "F:\web development\monior-changes-on-webpage\changelog.txt"
+
 
 def get_plain_str(iterator_str):
     return "\n".join([line.rstrip() for line in '\n'.join(iterator_str).splitlines() if line.strip()])
@@ -97,8 +103,8 @@ while flag:
             page_difference_str = get_plain_str(entire_page_difference)
 
             create_changelog_file(page_difference_str)
-            send_alert("gaurang.ambasana@dev2.wipro.com", "kevin.sanghavi1@dev2.wipro.com", "test mail",
-                       "Hi<br/><br/>HTML MSG", "F:\web development\monior-changes-on-webpage\changelog.txt")
+            send_alert(from_email, to_emails,
+                       email_subject, html_msg, file_path)
             print(difference_str)
 
             old_page, prev_version = new_page, res_soup
